@@ -18,7 +18,14 @@ $ownerId = $data ->ownerId;
 $origin = $data ->origin;
 $destination = $data ->destination;
 
-echo ($names. " ". $species);
+$sql = " INSERT INTO expawts-pet relocation (id, name, species, gender, age, MicroChipId, ownerName, ownerId, origin, destination) VALUES (1, Katy, Avian, female, 12, 2, Natasha, 12, 12, 12);";
+$result = mysqli_query($conn, $sql);
+
+if(!$result){
+    echo("Error Description:" .mysqli_error($conn));
+}else{
+    echo ("All is Good! Added user ");
+}
 
 
 
