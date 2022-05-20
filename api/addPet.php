@@ -24,7 +24,7 @@ $result = mysqli_query($conn, $sql);
 if(!$result){
     echo("Error Description:" .mysqli_error($conn));
 }else{
-    echo ("All is Good! Added user ");
+    echo ("All is Good! Add pet! ");
 }
 
 
